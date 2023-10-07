@@ -1,0 +1,17 @@
+.Like button {
+    width: 20%;
+    height: 30%;
+    background-color: #EDFFE0;
+    border-radius: 20px;
+    position: relative;
+    left: 40%;
+    margin-top: 5px;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+.Like button img {
+    width: 30px;
+    height: 30px;
+}

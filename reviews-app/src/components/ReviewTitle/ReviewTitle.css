@@ -1,0 +1,9 @@
+.ReviewTitle {
+    background-color: #FEC8D8;
+    height: 25%;
+    width: 25%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+}

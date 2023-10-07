@@ -1,0 +1,15 @@
+.Review {
+    background-color: #957DAD;
+    height: 10vh;
+    width: 50ch;
+    border: 2px solid;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.Review text {
+    text-decoration: underline
+}
