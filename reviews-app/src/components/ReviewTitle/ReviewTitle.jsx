@@ -1,8 +1,8 @@
-import "./ReviewTitle.css";
+import styles from "./ReviewTitle.module.scss";
 
 
 function ReviewTitle(props) {
-    return <div className="ReviewTitle">
+    return <div className={styles.ReviewTitle}>
         {props.title}
     </div>
 }

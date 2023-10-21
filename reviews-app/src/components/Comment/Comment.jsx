@@ -1,8 +1,8 @@
-import "./Comment.css"
+import styles from "./Comment.module.scss"
 
 
 function Comment(props) {
-    return <div className="Comment">
+    return <div className={styles.Comment}>
         <text>{props.author}</text>: {props.comment}
     </div>
 }

@@ -4,7 +4,7 @@ import getArticles from './utils/get-article.js';
 import LoadingCircle from './components/LoadingCircle/LoadingCircle';
 import { useEffect, useState } from 'react';
 
-import './App.css';
+import s from './App.module.scss';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
   const content = data ? data.map(item => <Review reviewData={item}/>) : <LoadingCircle/>;
 
   return (
-    <div className="App">
+    <div className={s.App}>
       <AppBody>
         {content}
       </AppBody>

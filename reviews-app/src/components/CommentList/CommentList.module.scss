@@ -1,0 +1,40 @@
+.CommentList {
+    li {
+        position: relative;
+        right: 5%;
+        list-style: none;
+    }
+    img {
+        float: left;
+        margin: 15px;
+        width: 20px;
+        height: 20px;
+    }
+    &.show {
+        display: block;
+    }
+}
+
+.CommentsListContent {
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.CommentListButton {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    button {
+        background-color: #FFDFD3;
+        transition-duration: 0.5s;
+        img {
+            width: 10px;
+            height: 10px;
+        }
+        &.rotate {
+            transform: rotate(180deg);
+        }
+    }
+}

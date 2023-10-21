@@ -1,8 +1,8 @@
-import './AppBody.css'
+import styles from './AppBody.module.scss'
 
 
 function AppBody({children}) {
-    return <div className='AppBody'>
+    return <div className={styles.AppBody}>
         {children}
     </div>
 }
