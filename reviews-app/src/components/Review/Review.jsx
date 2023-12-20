@@ -1,4 +1,4 @@
-import "./Review.css"
+import styles from "./Review.module.scss"
 import ReviewTitle from "../ReviewTitle/ReviewTitle";
 import Like from "../Like/Like";
 import CommentList from "../CommentList/CommentList";
@@ -6,7 +6,7 @@ import ReviewText from "../ReviewText/ReviewText";
 
 
 function Review(props) {
-    return <div className="Review">
+    return <div className={styles.Review}>
         <ReviewTitle title={props.reviewData.title}/>
         <ReviewText text={props.reviewData.text}/>
         <CommentList articleId={props.reviewData.articleId}/>

@@ -1,4 +1,4 @@
-import "./CommentList.css";
+import styles from "./CommentList.module.scss";
 import Comment from "../Comment/Comment";
 import commentImage from "../../assets/images/comment.svg";
 import arrowImage from "../../assets/images/arrow_down.svg";
@@ -6,13 +6,19 @@ import getComments from "../../utils/get-comments";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
 import DeleteButton from "./DeleteButton/DeleteButton";
 import {useState} from "react";
+import cnBind from "classnames/bind";
+
+
+const cx = cnBind.bind(styles);
 
 
 function CommentList(props) {
-
     const [showComment, updateShowState] = useState(false);
     const [comments, updateComments] = useState(null);
     const [wasSwapped, updateWasSwapped] = useState(false);
+
+    const commentsContentClass = cx("CommentsListContent", { show : showComment });
+    const buttonShowMoreClass = cx("CommentListButton.button", { rotate : showComment });
 
     function swapHideShow() {
         if (!wasSwapped) {
@@ -37,12 +43,12 @@ function CommentList(props) {
             </li>)}
     </ul> : <LoadingCircle/>;
 
-    return <div className="CommentList">
-        <div style={{display: showComment ? null : "none"}}>
+    return <div className={styles.CommentList}>
+        <div className={commentsContentClass}>
             {commentsContent}
         </div>
-        <div className="CommentListButton">
-            <button onClick={swapHideShow} style={{transform: showComment ? "rotate(180deg)" : null}}>
+        <div className={styles.CommentListButton}>
+            <button onClick={swapHideShow} className={buttonShowMoreClass}>
                 <img src={arrowImage} alt="arrowImage"/>
             </button>
         </div>

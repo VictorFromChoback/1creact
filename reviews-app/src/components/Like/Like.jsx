@@ -1,4 +1,4 @@
-import "./Like.css";
+import styles from "./Like.module.scss";
 import likeImage from "../../assets/images/like.svg"
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ function Like(props) {
         updateLikes(likes => isLiked ? likes - 1 : likes + 1);
     }
     
-    return <div className="Like">
+    return <div className={styles.Like}>
         <button onClick={incrementLikes} style={{backgroundColor: isLiked ? "#D27171" : null}}>
             {currentLikes}
             <img src={likeImage} alt="like"/>
