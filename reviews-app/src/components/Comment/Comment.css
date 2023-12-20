@@ -1,0 +1,16 @@
+.Comment {
+    min-width: 50%;
+    max-width: 80%;
+    min-height: 40%;
+    background-color: #FFDFD3;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+.Comment text {
+    font-weight: bold;
+}

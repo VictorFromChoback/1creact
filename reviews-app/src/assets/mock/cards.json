@@ -23,5 +23,10 @@
     "title": "Real article",
     "text": "Real text for real article",
     "currentLikes": 11
+  },
+  {
+    "title": "Lorem",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur beatae reprehenderit provident commodi eos atque nemo, ab incidunt magnam voluptatem perspiciatis explicabo molestias tempore eligendi iste, unde in reiciendis vel.",
+    "currentLikes": 4
   }
 ]

@@ -1,0 +1,15 @@
+.ReviewText {
+    background-color: #e4f3ed;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: inherit;
+}
+
+
+.ReviewText text {
+    text-decoration: underline
+}
